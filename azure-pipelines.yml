@@ -20,8 +20,8 @@ steps:
     npm run build
     npm test
   displayName: 'npm install and build'
-settings
+
 - task: PublishTestResults@2
-inputs:
+  inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
